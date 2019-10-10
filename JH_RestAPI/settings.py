@@ -78,9 +78,9 @@ REST_FRAMEWORK = {
         # django-oauth-toolkit >= 1.0.0
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
         'rest_framework_social_oauth2.authentication.SocialAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     ),
     'DEFAULT_PAGINATION_CLASS': 'JH_RestAPI.pagination.CustomPagination',
     'PAGE_SIZE': 30,

@@ -4,7 +4,7 @@ from django.db import models
 
 
 class JobPosition(models.Model):
-    job_id = models.CharField(max_length=10, unique=True, null=True, blank=True)
+    job_id = models.CharField(max_length=10, unique=True, null=True, blank=False)
     job_title = models.CharField(max_length=100, blank=False)
     location = models.CharField(max_length=100, null=True, blank=True)
     department = models.CharField(max_length=100, null=True, blank=True)
