@@ -6,7 +6,7 @@ from position import views
 
 urlpatterns = [
     path('', views.positions),
-    path('job_list/', JobPositionList.as_view()),
+    path('add/', JobPositionList.as_view()),
     path('<int:job_id>/', JobPositionDetail.as_view()),
     path('auth/', JobPositionAuthentication.as_view())
 ]

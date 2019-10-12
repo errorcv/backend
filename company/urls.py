@@ -6,7 +6,7 @@ from company import views
 
 urlpatterns = [
     path('', views.companies),
-    path('company_list/', CompanyList.as_view()),
+    path('add/', CompanyList.as_view()),
     path('<int:company_id>/', CompanyDetail.as_view()),
     path('auth/', CompanyAuthentication.as_view())
 ]
