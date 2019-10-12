@@ -3,7 +3,6 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.decorators import api_view
 
 from JH_RestAPI import pagination
-from position.serializers import JobPositionSerializer
 from utils.generic_json_creator import create_response
 from utils.utils import get_boolean_from_request
 from .models import Company
