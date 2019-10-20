@@ -31,7 +31,6 @@ urlpatterns = [
     path('api/positions/', include('position.urls')),
     path('api/', include('utils.urls')),
     re_path(r'^auth/', include('rest_framework_social_oauth2.urls')),
-    path('jobs/', include('jobs.urls')),
 ]
 
 if settings.DEBUG:
